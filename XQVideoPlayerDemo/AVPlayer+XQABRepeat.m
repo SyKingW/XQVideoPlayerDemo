@@ -13,6 +13,8 @@
 #import <XQProjectTool/NSObject+XQExchangeIMP.h>
 #import "AVPlayerItem+XQTime.h"
 
+#import "XQVideoPlayerDemo-Swift.h"
+
 // AVPeriodicTimebaseObserver
 // 循环返回的对象
 static id _ab_LoopPlayback_PeriodicTime_obj = nil;
@@ -28,30 +30,31 @@ static id _ab_LoopPlayback_PeriodicTime_obj = nil;
     if (_ab_LoopPlayback_PeriodicTime_obj) {
         [self removeTimeObserver:_ab_LoopPlayback_PeriodicTime_obj];
         _ab_LoopPlayback_PeriodicTime_obj = nil;
+        [XQProgressHUD showInfoWithStatus:@"已关闭AB点循环"];
     }
     
     if (start) {
         
-        if (self.xq_APoint >= self.xq_BPoint) {
+        if ((self.xq_BPoint - self.xq_APoint) < 3) {
+            // 弹框不应该写在这里的...算了，就先这样吧，以后需要再优化
             // B 点不能 等于 or 小于 A点, 不然会开启失败
+            [XQProgressHUD showInfoWithStatus:@"B点必须大于A点3秒"];
             return 0;
         }
         
         
+        [XQProgressHUD showInfoWithStatus:@"已开启AB点循环"];
         
         // 感觉这些监听进度, 可以留在外面...
-        if (!_ab_LoopPlayback_PeriodicTime_obj) {
-            
-            __weak typeof(self) weakSelf = self;
-            CMTime time = CMTimeMakeWithSeconds(1, 1);
-            // 持有这个对象, 后面需要取消监听
-            _ab_LoopPlayback_PeriodicTime_obj = [self addPeriodicTimeObserverForInterval:time queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
-                /// 更新播放进度
-                [weakSelf xq_checkAB];
-            }];
-            
-            NSLog(@"%@", _ab_LoopPlayback_PeriodicTime_obj);
-        }
+        __weak typeof(self) weakSelf = self;
+        CMTime time = CMTimeMakeWithSeconds(1, 1);
+        // 持有这个对象, 后面需要取消监听
+        _ab_LoopPlayback_PeriodicTime_obj = [self addPeriodicTimeObserverForInterval:time queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+            /// 更新播放进度
+            [weakSelf xq_checkAB];
+        }];
+        
+        NSLog(@"%@", _ab_LoopPlayback_PeriodicTime_obj);
         
     }
     
@@ -64,20 +67,22 @@ static id _ab_LoopPlayback_PeriodicTime_obj = nil;
     
     if (self.xq_APoint >= self.xq_BPoint) {
         // B 点不能 等于 or 小于 A点, 不然会开启失败
+        [XQProgressHUD showInfoWithStatus:@"B点必须大于A点3秒"];
+        [self xq_ABLoopPlaybackWithStart:NO];
         return;
     }
     
     if ((self.xq_BPoint - self.xq_APoint) < 3) {
-        NSLog(@"设置间隔过短");
+        [XQProgressHUD showInfoWithStatus:@"设置AB点间隔过短, B点必须大于A点3秒"];
+        [self xq_ABLoopPlaybackWithStart:NO];
         return;
     }
     
     // 当前多少秒
     int currentSeconds = [self.currentItem xq_time_getCurrentSeconds];
     
-    
     // 超出范围
-    
+    // 计算要留一个误差值, 这样比较流畅
     if ((currentSeconds - self.xq_BPoint) > 1 ||
         (self.xq_APoint - currentSeconds) > 1 ) {
         NSLog(@"%d, %d, %d", currentSeconds, self.xq_BPoint, self.xq_APoint);

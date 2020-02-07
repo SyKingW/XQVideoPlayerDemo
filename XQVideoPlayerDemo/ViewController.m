@@ -86,7 +86,7 @@ NSNotificationName XQ_Notification_stopLoopPlayback = @"XQ_Notification_stopLoop
 
 - (void)viewDidAppear {
     [super viewDidAppear];
-    [XQProgressHUD showInfoWithStatus:@"command + O, 选择本地视频文件"];
+    [XQProgressHUD showInfoWithStatus:@"command + O, 选择本地视频文件\n具体操作指令可看左上角"];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
