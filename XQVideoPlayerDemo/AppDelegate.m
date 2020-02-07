@@ -47,7 +47,7 @@
     [XQOpenPanel beginSheetModalWithWindow:nil configPanel:^(NSOpenPanel *openPanel) {
         
         openPanel.canChooseDirectories = NO;
-        [openPanel setAllowedFileTypes:@[@"mp4"]];
+        [openPanel setAllowedFileTypes:@[@"mp4", @"avi", @"MPG", @"mpg"]];
         
     } openCallback:^(NSString *path) {
         

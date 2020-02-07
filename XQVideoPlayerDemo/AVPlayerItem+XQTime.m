@@ -25,15 +25,14 @@
 /// @param seconds 秒
 - (void)xq_seekToTime:(int)seconds {
     CMTime time = CMTimeMakeWithSeconds(seconds, self.duration.timescale);
-    [self seekToTime:time completionHandler:^(BOOL finished) {
+//    [self seekToTime:time completionHandler:^(BOOL finished) {
+//        NSLog(@"seekToTime: %d", finished);
+//    }];
+    
+    // 有些人说要用这个，上面那个会有误差??? 没试过
+    [self seekToTime:time toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero completionHandler:^(BOOL finished) {    
         NSLog(@"seekToTime: %d", finished);
     }];
-    
-    // 有些人说要用这个，上面那个会有误差?
-    // 目前没有发现什么误差
-    //    [self.playerView.player seekToTime:time toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero completionHandler:^(BOOL finished) {
-    //        NSLog(@"seekToTime: %d", finished);
-    //    }];
 }
 
 /// 在当前进度上，前进or后退多少秒

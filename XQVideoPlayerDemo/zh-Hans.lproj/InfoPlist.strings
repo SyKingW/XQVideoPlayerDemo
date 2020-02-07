@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  XQVideoPlayerDemo
+
+  Created by sinking on 2020/2/8.
+  Copyright © 2020 sinking. All rights reserved.
+*/
+
+CFBundleName = "AB点重复播放";
+CFBundleDisplayName = "AB点重复播放";

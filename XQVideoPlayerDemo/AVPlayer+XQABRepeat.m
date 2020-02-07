@@ -81,11 +81,12 @@ static id _ab_LoopPlayback_PeriodicTime_obj = nil;
     // 当前多少秒
     int currentSeconds = [self.currentItem xq_time_getCurrentSeconds];
     
+    NSLog(@"%d, %d, %d", currentSeconds, self.xq_BPoint, self.xq_APoint);
+    
     // 超出范围
     // 计算要留一个误差值, 这样比较流畅
     if ((currentSeconds - self.xq_BPoint) > 1 ||
         (self.xq_APoint - currentSeconds) > 1 ) {
-        NSLog(@"%d, %d, %d", currentSeconds, self.xq_BPoint, self.xq_APoint);
         [self.currentItem xq_seekToTime:self.xq_APoint];
     }
     
@@ -100,6 +101,7 @@ static id _ab_LoopPlayback_PeriodicTime_obj = nil;
 
 - (void)setXq_APoint:(int)xq_APoint {
     [NSObject xq_setAssociatedObject:self key:@"xq_APoint" value:@(xq_APoint) policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
+    [XQProgressHUD showInfoWithStatus:@"已设置A点"];
 }
 
 - (int)xq_BPoint {
@@ -109,6 +111,7 @@ static id _ab_LoopPlayback_PeriodicTime_obj = nil;
 
 - (void)setXq_BPoint:(int)xq_BPoint {
     [NSObject xq_setAssociatedObject:self key:@"xq_BPoint" value:@(xq_BPoint) policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
+    [XQProgressHUD showInfoWithStatus:@"已设置B点"];
 }
 
 

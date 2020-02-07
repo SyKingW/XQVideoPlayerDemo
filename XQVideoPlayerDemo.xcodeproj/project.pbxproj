@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39287ADE23EDD861001F7B5D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39287AE023EDD861001F7B5D /* InfoPlist.strings */; };
 		39BED0A823ED9A1C00E8312C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BED0A723ED9A1C00E8312C /* AppDelegate.m */; };
 		39BED0AB23ED9A1C00E8312C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BED0AA23ED9A1C00E8312C /* ViewController.m */; };
 		39BED0AD23ED9A1D00E8312C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BED0AC23ED9A1D00E8312C /* Assets.xcassets */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39287ADF23EDD861001F7B5D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		39287AE123EDD869001F7B5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		39BED0A323ED9A1C00E8312C /* XQVideoPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XQVideoPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BED0A623ED9A1C00E8312C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39BED0A723ED9A1C00E8312C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +92,7 @@
 				39BED0C123EDBA6C00E8312C /* AVPlayer+XQABRepeat.m */,
 				39BED0BA23ED9BDE00E8312C /* XQMainMenu.h */,
 				39BED0BB23ED9BDE00E8312C /* XQMainMenu.m */,
+				39287AE023EDD861001F7B5D /* InfoPlist.strings */,
 				39BED0D223EDC97D00E8312C /* XQProgressHUD.swift */,
 				39BED0C923EDC86F00E8312C /* ProgressHUD */,
 				39BED0AC23ED9A1D00E8312C /* Assets.xcassets */,
@@ -169,6 +173,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 39BED09A23ED9A1C00E8312C;
 			productRefGroup = 39BED0A423ED9A1C00E8312C /* Products */;
@@ -186,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39BED0AD23ED9A1D00E8312C /* Assets.xcassets in Resources */,
+				39287ADE23EDD861001F7B5D /* InfoPlist.strings in Resources */,
 				39BED0B023ED9A1D00E8312C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +260,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		39287AE023EDD861001F7B5D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39287ADF23EDD861001F7B5D /* zh-Hans */,
+				39287AE123EDD869001F7B5D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		39BED0AE23ED9A1D00E8312C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -269,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -315,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -327,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -367,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -380,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XQVideoPlayerDemo/XQVideoPlayerDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
@@ -401,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XQVideoPlayerDemo/XQVideoPlayerDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
