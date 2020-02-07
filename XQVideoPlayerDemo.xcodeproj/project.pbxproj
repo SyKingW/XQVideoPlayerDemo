@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39BED0A823ED9A1C00E8312C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BED0A723ED9A1C00E8312C /* AppDelegate.m */; };
+		39BED0AB23ED9A1C00E8312C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BED0AA23ED9A1C00E8312C /* ViewController.m */; };
+		39BED0AD23ED9A1D00E8312C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BED0AC23ED9A1D00E8312C /* Assets.xcassets */; };
+		39BED0B023ED9A1D00E8312C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BED0AE23ED9A1D00E8312C /* Main.storyboard */; };
+		39BED0B323ED9A1D00E8312C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BED0B223ED9A1D00E8312C /* main.m */; };
+		39BED0BC23ED9BDE00E8312C /* XQMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BED0BB23ED9BDE00E8312C /* XQMainMenu.m */; };
+		39BED0BF23EDB6EB00E8312C /* AVPlayerItem+XQTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BED0BE23EDB6EB00E8312C /* AVPlayerItem+XQTime.m */; };
+		39BED0C223EDBA6C00E8312C /* AVPlayer+XQABRepeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BED0C123EDBA6C00E8312C /* AVPlayer+XQABRepeat.m */; };
+		39BED0CC23EDC86F00E8312C /* YRKSpinningProgressIndicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BED0CA23EDC86F00E8312C /* YRKSpinningProgressIndicatorLayer.swift */; };
+		39BED0CD23EDC86F00E8312C /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BED0CB23EDC86F00E8312C /* ProgressHUD.swift */; };
+		39BED0D323EDC97D00E8312C /* XQProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BED0D223EDC97D00E8312C /* XQProgressHUD.swift */; };
+		F1950538262D3AEF8DD090CA /* Pods_XQVideoPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A114F60322EA47855B23052 /* Pods_XQVideoPlayerDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39BED0A323ED9A1C00E8312C /* XQVideoPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XQVideoPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39BED0A623ED9A1C00E8312C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39BED0A723ED9A1C00E8312C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		39BED0A923ED9A1C00E8312C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		39BED0AA23ED9A1C00E8312C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39BED0AC23ED9A1D00E8312C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39BED0AF23ED9A1D00E8312C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39BED0B123ED9A1D00E8312C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39BED0B223ED9A1D00E8312C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39BED0B423ED9A1D00E8312C /* XQVideoPlayerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XQVideoPlayerDemo.entitlements; sourceTree = "<group>"; };
+		39BED0BA23ED9BDE00E8312C /* XQMainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XQMainMenu.h; sourceTree = "<group>"; };
+		39BED0BB23ED9BDE00E8312C /* XQMainMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XQMainMenu.m; sourceTree = "<group>"; };
+		39BED0BD23EDB6EB00E8312C /* AVPlayerItem+XQTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVPlayerItem+XQTime.h"; sourceTree = "<group>"; };
+		39BED0BE23EDB6EB00E8312C /* AVPlayerItem+XQTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVPlayerItem+XQTime.m"; sourceTree = "<group>"; };
+		39BED0C023EDBA6C00E8312C /* AVPlayer+XQABRepeat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVPlayer+XQABRepeat.h"; sourceTree = "<group>"; };
+		39BED0C123EDBA6C00E8312C /* AVPlayer+XQABRepeat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVPlayer+XQABRepeat.m"; sourceTree = "<group>"; };
+		39BED0CA23EDC86F00E8312C /* YRKSpinningProgressIndicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YRKSpinningProgressIndicatorLayer.swift; sourceTree = "<group>"; };
+		39BED0CB23EDC86F00E8312C /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		39BED0D223EDC97D00E8312C /* XQProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XQProgressHUD.swift; sourceTree = "<group>"; };
+		8A114F60322EA47855B23052 /* Pods_XQVideoPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XQVideoPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2FCF1C2B110D627F32F9E3E /* Pods-XQVideoPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XQVideoPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-XQVideoPlayerDemo/Pods-XQVideoPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D830A46B2DA5BAAFBCF4E43B /* Pods-XQVideoPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XQVideoPlayerDemo.release.xcconfig"; path = "Target Support Files/Pods-XQVideoPlayerDemo/Pods-XQVideoPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39BED0A023ED9A1C00E8312C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1950538262D3AEF8DD090CA /* Pods_XQVideoPlayerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39BED09A23ED9A1C00E8312C = {
+			isa = PBXGroup;
+			children = (
+				39BED0A523ED9A1C00E8312C /* XQVideoPlayerDemo */,
+				39BED0A423ED9A1C00E8312C /* Products */,
+				522473F36A5E2F7068417D22 /* Pods */,
+				3E6AB4B62A9AFCDE4F9A6D02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39BED0A423ED9A1C00E8312C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39BED0A323ED9A1C00E8312C /* XQVideoPlayerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39BED0A523ED9A1C00E8312C /* XQVideoPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				39BED0A623ED9A1C00E8312C /* AppDelegate.h */,
+				39BED0A723ED9A1C00E8312C /* AppDelegate.m */,
+				39BED0A923ED9A1C00E8312C /* ViewController.h */,
+				39BED0AA23ED9A1C00E8312C /* ViewController.m */,
+				39BED0BD23EDB6EB00E8312C /* AVPlayerItem+XQTime.h */,
+				39BED0BE23EDB6EB00E8312C /* AVPlayerItem+XQTime.m */,
+				39BED0C023EDBA6C00E8312C /* AVPlayer+XQABRepeat.h */,
+				39BED0C123EDBA6C00E8312C /* AVPlayer+XQABRepeat.m */,
+				39BED0BA23ED9BDE00E8312C /* XQMainMenu.h */,
+				39BED0BB23ED9BDE00E8312C /* XQMainMenu.m */,
+				39BED0D223EDC97D00E8312C /* XQProgressHUD.swift */,
+				39BED0C923EDC86F00E8312C /* ProgressHUD */,
+				39BED0AC23ED9A1D00E8312C /* Assets.xcassets */,
+				39BED0AE23ED9A1D00E8312C /* Main.storyboard */,
+				39BED0B123ED9A1D00E8312C /* Info.plist */,
+				39BED0B223ED9A1D00E8312C /* main.m */,
+				39BED0B423ED9A1D00E8312C /* XQVideoPlayerDemo.entitlements */,
+			);
+			path = XQVideoPlayerDemo;
+			sourceTree = "<group>";
+		};
+		39BED0C923EDC86F00E8312C /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				39BED0CA23EDC86F00E8312C /* YRKSpinningProgressIndicatorLayer.swift */,
+				39BED0CB23EDC86F00E8312C /* ProgressHUD.swift */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		3E6AB4B62A9AFCDE4F9A6D02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A114F60322EA47855B23052 /* Pods_XQVideoPlayerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		522473F36A5E2F7068417D22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2FCF1C2B110D627F32F9E3E /* Pods-XQVideoPlayerDemo.debug.xcconfig */,
+				D830A46B2DA5BAAFBCF4E43B /* Pods-XQVideoPlayerDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39BED0A223ED9A1C00E8312C /* XQVideoPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39BED0B723ED9A1D00E8312C /* Build configuration list for PBXNativeTarget "XQVideoPlayerDemo" */;
+			buildPhases = (
+				E16B33A24BB5260B4DF7F65B /* [CP] Check Pods Manifest.lock */,
+				39BED09F23ED9A1C00E8312C /* Sources */,
+				39BED0A023ED9A1C00E8312C /* Frameworks */,
+				39BED0A123ED9A1C00E8312C /* Resources */,
+				F234B5F4BA410EACE957DC3C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XQVideoPlayerDemo;
+			productName = XQVideoPlayerDemo;
+			productReference = 39BED0A323ED9A1C00E8312C /* XQVideoPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39BED09B23ED9A1C00E8312C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = sinking;
+				TargetAttributes = {
+					39BED0A223ED9A1C00E8312C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 39BED09E23ED9A1C00E8312C /* Build configuration list for PBXProject "XQVideoPlayerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39BED09A23ED9A1C00E8312C;
+			productRefGroup = 39BED0A423ED9A1C00E8312C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39BED0A223ED9A1C00E8312C /* XQVideoPlayerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39BED0A123ED9A1C00E8312C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39BED0AD23ED9A1D00E8312C /* Assets.xcassets in Resources */,
+				39BED0B023ED9A1D00E8312C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E16B33A24BB5260B4DF7F65B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XQVideoPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F234B5F4BA410EACE957DC3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XQVideoPlayerDemo/Pods-XQVideoPlayerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XQVideoPlayerDemo/Pods-XQVideoPlayerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XQVideoPlayerDemo/Pods-XQVideoPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39BED09F23ED9A1C00E8312C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39BED0AB23ED9A1C00E8312C /* ViewController.m in Sources */,
+				39BED0B323ED9A1D00E8312C /* main.m in Sources */,
+				39BED0CD23EDC86F00E8312C /* ProgressHUD.swift in Sources */,
+				39BED0BF23EDB6EB00E8312C /* AVPlayerItem+XQTime.m in Sources */,
+				39BED0D323EDC97D00E8312C /* XQProgressHUD.swift in Sources */,
+				39BED0CC23EDC86F00E8312C /* YRKSpinningProgressIndicatorLayer.swift in Sources */,
+				39BED0C223EDBA6C00E8312C /* AVPlayer+XQABRepeat.m in Sources */,
+				39BED0BC23ED9BDE00E8312C /* XQMainMenu.m in Sources */,
+				39BED0A823ED9A1C00E8312C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39BED0AE23ED9A1D00E8312C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39BED0AF23ED9A1D00E8312C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39BED0B523ED9A1D00E8312C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		39BED0B623ED9A1D00E8312C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		39BED0B823ED9A1D00E8312C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2FCF1C2B110D627F32F9E3E /* Pods-XQVideoPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XQVideoPlayerDemo/XQVideoPlayerDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = HYE5WA8QEX;
+				INFOPLIST_FILE = XQVideoPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sinking.XQVideoPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		39BED0B923ED9A1D00E8312C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D830A46B2DA5BAAFBCF4E43B /* Pods-XQVideoPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XQVideoPlayerDemo/XQVideoPlayerDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = HYE5WA8QEX;
+				INFOPLIST_FILE = XQVideoPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sinking.XQVideoPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39BED09E23ED9A1C00E8312C /* Build configuration list for PBXProject "XQVideoPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39BED0B523ED9A1D00E8312C /* Debug */,
+				39BED0B623ED9A1D00E8312C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39BED0B723ED9A1D00E8312C /* Build configuration list for PBXNativeTarget "XQVideoPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39BED0B823ED9A1D00E8312C /* Debug */,
+				39BED0B923ED9A1D00E8312C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39BED09B23ED9A1C00E8312C /* Project object */;
+}

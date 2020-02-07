@@ -1,0 +1,28 @@
+PODS:
+  - Masonry (1.1.0)
+  - XQProjectTool (2.0):
+    - XQProjectTool/MacTool (= 2.0)
+    - XQProjectTool/Tool (= 2.0)
+    - XQProjectTool/UITool (= 2.0)
+  - XQProjectTool/MacTool (2.0)
+  - XQProjectTool/Tool (2.0)
+
+DEPENDENCIES:
+  - Masonry
+  - XQProjectTool (from `/Users/sinking/Desktop/Company/Tool/XQProjectTool`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  XQProjectTool:
+    :path: "/Users/sinking/Desktop/Company/Tool/XQProjectTool"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  XQProjectTool: 9f11b3193d25004057c32d9b8fa900db52bc4abe
+
+PODFILE CHECKSUM: 252e8568b75a02dc171696fd1fbdd5da96c8ca19
+
+COCOAPODS: 1.8.4
