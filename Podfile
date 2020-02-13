@@ -8,7 +8,7 @@ target 'XQVideoPlayerDemo' do
   # Pods for XQVideoPlayerDemo
 
 
-pod 'XQProjectTool', :path => '/Users/sinking/Desktop/Company/Tool/XQProjectTool'
+pod 'XQProjectTool', :git => 'https://github.com/SyKingW/XQProjectTool.git'
 
 pod 'Masonry'
 
